@@ -30,5 +30,11 @@ namespace MakeNote
                 
             }
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            WritingNote writing = new WritingNote();
+            writing.Show();
+        }
     }
 }

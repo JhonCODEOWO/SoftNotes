@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +40,21 @@ namespace MakeNote
                 return true;
             }
             return false;
+        }
+
+        public bool guardarTXT(string titulo, string contenido, string ruta)
+        {
+            try
+            {
+                string fileCompletePath = ruta + titulo;
+                File.WriteAllText(fileCompletePath, contenido);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+            
         }
     }
 }
