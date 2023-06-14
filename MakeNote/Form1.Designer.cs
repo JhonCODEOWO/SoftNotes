@@ -30,12 +30,12 @@ namespace MakeNote
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lblBienvenida = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.button1 = new System.Windows.Forms.Button();
             this.lblSinNotas = new System.Windows.Forms.Label();
+            this.button1 = new System.Windows.Forms.Button();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.lblBienvenida = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -52,18 +52,6 @@ namespace MakeNote
             this.panel1.Size = new System.Drawing.Size(487, 399);
             this.panel1.TabIndex = 0;
             // 
-            // lblBienvenida
-            // 
-            this.lblBienvenida.AutoSize = true;
-            this.lblBienvenida.BackColor = System.Drawing.Color.Transparent;
-            this.lblBienvenida.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblBienvenida.ForeColor = System.Drawing.Color.White;
-            this.lblBienvenida.Location = new System.Drawing.Point(12, 14);
-            this.lblBienvenida.Name = "lblBienvenida";
-            this.lblBienvenida.Size = new System.Drawing.Size(115, 25);
-            this.lblBienvenida.TabIndex = 1;
-            this.lblBienvenida.Text = "Bienvenido";
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.White;
@@ -76,26 +64,16 @@ namespace MakeNote
             this.panel3.Size = new System.Drawing.Size(459, 320);
             this.panel3.TabIndex = 1;
             // 
-            // label2
+            // lblSinNotas
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(7, 8);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 23);
-            this.label2.TabIndex = 0;
-            this.label2.Text = "Tus notas";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.AllowUserToDeleteRows = false;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(11, 38);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.Size = new System.Drawing.Size(352, 268);
-            this.dataGridView1.TabIndex = 1;
+            this.lblSinNotas.BackColor = System.Drawing.Color.Transparent;
+            this.lblSinNotas.Font = new System.Drawing.Font("Bahnschrift Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinNotas.Location = new System.Drawing.Point(11, 38);
+            this.lblSinNotas.Name = "lblSinNotas";
+            this.lblSinNotas.Size = new System.Drawing.Size(352, 268);
+            this.lblSinNotas.TabIndex = 3;
+            this.lblSinNotas.Text = "No hay notas";
+            this.lblSinNotas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button1
             // 
@@ -108,16 +86,38 @@ namespace MakeNote
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // lblSinNotas
+            // dataGridView1
             // 
-            this.lblSinNotas.BackColor = System.Drawing.Color.Transparent;
-            this.lblSinNotas.Font = new System.Drawing.Font("Bahnschrift Light", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSinNotas.Location = new System.Drawing.Point(11, 38);
-            this.lblSinNotas.Name = "lblSinNotas";
-            this.lblSinNotas.Size = new System.Drawing.Size(352, 268);
-            this.lblSinNotas.TabIndex = 3;
-            this.lblSinNotas.Text = "No hay notas";
-            this.lblSinNotas.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Location = new System.Drawing.Point(11, 38);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(352, 268);
+            this.dataGridView1.TabIndex = 1;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Bahnschrift Light", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(7, 8);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 23);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "Tus notas";
+            // 
+            // lblBienvenida
+            // 
+            this.lblBienvenida.AutoSize = true;
+            this.lblBienvenida.BackColor = System.Drawing.Color.Transparent;
+            this.lblBienvenida.Font = new System.Drawing.Font("Bahnschrift Light", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblBienvenida.ForeColor = System.Drawing.Color.White;
+            this.lblBienvenida.Location = new System.Drawing.Point(12, 14);
+            this.lblBienvenida.Name = "lblBienvenida";
+            this.lblBienvenida.Size = new System.Drawing.Size(115, 25);
+            this.lblBienvenida.TabIndex = 1;
+            this.lblBienvenida.Text = "Bienvenido";
             // 
             // Form1
             // 

@@ -12,6 +12,7 @@ namespace MakeNote
 {
     public partial class Form1 : Form
     {
+        BD_Methos bd_methods = new BD_Methos();
         Metodos metodos = new Metodos();
         public Form1()
         {
@@ -20,6 +21,7 @@ namespace MakeNote
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            dataGridView1.DataSource = bd_methods.notesInBD();
             lblBienvenida.Text = metodos.saludar() + " ¿Que deseas hacer?";
             if (metodos.verificarFilas(dataGridView1) == false)
             {
@@ -27,7 +29,7 @@ namespace MakeNote
             }
             else
             {
-                
+                lblSinNotas.Visible = false;
             }
         }
 

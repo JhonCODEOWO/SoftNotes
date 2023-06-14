@@ -42,11 +42,11 @@ namespace MakeNote
             return false;
         }
 
-        public bool guardarTXT(string titulo, string contenido, string ruta)
+        public bool guardarTXT(string titulo, string importancia, string contenido, string ruta , string tipo)
         {
             try
             {
-                string fileCompletePath = ruta + titulo;
+                string fileCompletePath = ruta + titulo + importancia + tipo;
                 File.WriteAllText(fileCompletePath, contenido);
                 return true;
             }
